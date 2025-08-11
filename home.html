@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySwapp - Home</title>
+  <link rel="stylesheet" href="style_home.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <img src="assests/logo_white-removebg-preview.png" alt="StudySwapp logo" />
+        <span>StudySwapp</span>
+      </a>
+      <nav class="nav-links">
+        <a class="active" href="#">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Campus Zone</a>
+        <a href="#">Contact Us</a>
+      </nav>
+      <div class="login">
+        <a href="profile.html">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sale Section with Side Slides and Dots -->
+  <section class="sale">
+    <div class="sale-header">
+      <h2>Hot Sales</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="sale-container">
+      <div class="sale-slides-wrapper">
+        <div class="sale-slides" id="saleSlides">
+          <div class="sale-slide active">
+            <div class="sale-image"></div>
+            <div class="sale-info">
+              <h4 class="sale-title">Engineering Textbook Bundle</h4>
+              <p class="sale-original">$89.99</p>
+              <p class="sale-price">$59.99</p>
+              <span class="sale-discount">33% OFF</span>
+            </div>
+          </div>
+          <div class="sale-slide">
+            <div class="sale-image"></div>
+            <div class="sale-info">
+              <h4 class="sale-title">Scientific Calculator Set</h4>
+              <p class="sale-original">$149.99</p>
+              <p class="sale-price">$99.99</p>
+              <span class="sale-discount">33% OFF</span>
+            </div>
+          </div>
+          <div class="sale-slide">
+            <div class="sale-image"></div>
+            <div class="sale-info">
+              <h4 class="sale-title">Lab Equipment Kit</h4>
+              <p class="sale-original">$199.99</p>
+              <p class="sale-price">$129.99</p>
+              <span class="sale-discount">35% OFF</span>
+            </div>
+          </div>
+          <div class="sale-slide">
+            <div class="sale-image"></div>
+            <div class="sale-info">
+              <h4 class="sale-title">Programming Books Collection</h4>
+              <p class="sale-original">$79.99</p>
+              <p class="sale-price">$49.99</p>
+              <span class="sale-discount">37% OFF</span>
+            </div>
+          </div>
+          <div class="sale-slide">
+            <div class="sale-image"></div>
+            <div class="sale-info">
+              <h4 class="sale-title">Study Desk Accessories</h4>
+              <p class="sale-original">$39.99</p>
+              <p class="sale-price">$24.99</p>
+              <span class="sale-discount">37% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sale-dots">
+        <span class="dot active" onclick="showSaleSlide(0)"></span>
+        <span class="dot" onclick="showSaleSlide(1)"></span>
+        <span class="dot" onclick="showSaleSlide(2)"></span>
+        <span class="dot" onclick="showSaleSlide(3)"></span>
+        <span class="dot" onclick="showSaleSlide(4)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore">
+    <div class="explore-header">
+      <h2>Explore</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="explore-scroll-container">
+      <div class="explore-grid">
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Advanced Mathematics Textbook for Engineering Students</h4>
+            <p class="product-price">$29.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Chemistry Lab Equipment Set</h4>
+            <p class="product-price">$39.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Physics Study Guide and Solutions Manual</h4>
+            <p class="product-price">$24.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Laptop Stand</h4>
+            <p class="product-price">$19.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Digital Calculator Premium Edition</h4>
+            <p class="product-price">$44.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Biology Reference Manual</h4>
+            <p class="product-price">$15.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Programming Fundamentals Guide</h4>
+            <p class="product-price">$32.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Study Desk Organizer Set</h4>
+            <p class="product-price">$27.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Engineering Drawing Tools Kit</h4>
+            <p class="product-price">$52.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Wireless Mouse and Keyboard</h4>
+            <p class="product-price">$18.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Statistics and Probability Handbook</h4>
+            <p class="product-price">$35.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Laboratory Safety Equipment</h4>
+            <p class="product-price">$41.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Notebook and Planner Set</h4>
+            <p class="product-price">$23.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Portable Study Lamp LED</h4>
+            <p class="product-price">$28.99</p>
+          </div>
+        </div>
+        <div class="explore-card">
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h4 class="product-name">Scientific Calculator Advanced</h4>
+            <p class="product-price">$47.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let currentSaleSlide = 0;
+    const totalSaleSlides = 5;
+
+    function showSaleSlide(index) {
+      // Hide all slides
+      const slides = document.querySelectorAll('.sale-slide');
+      const dots = document.querySelectorAll('.dot');
+      
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      // Show selected slide
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      
+      currentSaleSlide = index;
+    }
+
+    // Auto-scroll every 5 seconds
+    setInterval(() => {
+      currentSaleSlide = (currentSaleSlide + 1) % totalSaleSlides;
+      showSaleSlide(currentSaleSlide);
+    }, 5000);
+  </script>
+</body>
+</html>
