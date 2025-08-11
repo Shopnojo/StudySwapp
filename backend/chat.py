@@ -1,7 +1,7 @@
 # chat.py
 from fastapi import APIRouter, Depends, HTTPException
 from mysql.connector import Error
-from database import get_db  # Assuming your get_db is in database.py
+from backend.database import get_db # Assuming your get_db is in database.py
 from fastapi.responses import JSONResponse
 
 router = APIRouter()

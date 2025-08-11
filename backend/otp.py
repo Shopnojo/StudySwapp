@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 import os
 from dotenv import load_dotenv
 
-from ..database import get_db  # assuming get_db is your MySQL connector wrapper
+from backend.database import get_db  # assuming get_db is your MySQL connector wrapper
 
 load_dotenv()
 

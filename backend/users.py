@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, EmailStr
 import mysql.connector
-from ..database import get_db
+from backend.database import get_db
 from passlib.context import CryptContext
 
 router = APIRouter()
@@ -12,6 +12,10 @@ class UserCreate(BaseModel):
     username: str
     email: EmailStr
     password: str
+
+@router.get("/users")
+def users_root():
+    return {"message": "Users route working"}
 
 # Hashing password
 def hash_password(password: str) -> str:

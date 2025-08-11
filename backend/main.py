@@ -2,14 +2,14 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from chat import router as chat_router
+#from chat import router as chat_router
 
 
 
 
-from users import router as users_router
-from posts import router as posts_router
-from auth import router as auth_router
+from backend.users import router as users_router
+from backend.posts import router as posts_router
+from backend.auth import router as auth_router
 
 # ✅ Optional: Only needed if you're testing DB on startup
 # from database import get_db  # Only if you need to test DB at startup
@@ -29,7 +29,7 @@ app.add_middleware(
 app.include_router(users_router, prefix="/users", tags=["Users"])
 app.include_router(posts_router, prefix="/posts", tags=["Posts"])
 app.include_router(auth_router, prefix="/auth", tags=["Auth"])
-app.include_router(chat_router, prefix="/chat", tags=["Chat"])
+#app.include_router(chat_router, prefix="/chat", tags=["Chat"])
 
 # ✅ Health check
 @app.get("/")

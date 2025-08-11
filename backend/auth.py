@@ -2,6 +2,7 @@
 
 from datetime import datetime, timedelta
 from fastapi import HTTPException, Depends
+from fastapi import APIRouter
 from fastapi.security import OAuth2PasswordBearer
 import jwt
 import os
@@ -17,6 +18,13 @@ ALGORITHM = "HS256"
 # Adjust this based on your actual route
 # If your login route is under /users/token (as in your main.py), keep this:
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/users/token")
+
+
+router = APIRouter()
+
+@router.get("/auth")
+def auth_root():
+    return {"message": "Auth route working"}
 
 def create_token(data: dict, expires_delta: timedelta = timedelta(hours=1)):
     """

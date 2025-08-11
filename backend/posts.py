@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from typing import List
-from ..database import get_db
+from backend.database import get_db
 
 router = APIRouter()
 
@@ -17,6 +17,10 @@ class PostOut(BaseModel):
     user_id: int
     title: str
     content: str
+
+@router.get("/posts")
+def posts_root():
+    return {"message": "Posts route working"}
 
 # Route to create a new post
 @router.post("/create")
